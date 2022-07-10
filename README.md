@@ -1,5 +1,5 @@
 # Phylogenomic Gene Cluster Display
-This series of python scripts takes the genomes collected by the Genome Taxonomy Database (GTDB), extracts proteins from each genome based on hits to a Hidden Markov Model, and then displays these genes and their genomic neighborhood on a phylogenomic tree.  These scripts have been a work in progress, helping with the analysis done in the following publications, and projects currently ongoing:
+This series of python scripts takes the genomes collected by the Genome Taxonomy Database (GTDB), extracts proteins from each genome based on hits to a Hidden Markov Model, and then displays these genes and their genomic neighborhood on a phylogenomic tree.  These scripts have been a work in progress, helping with the analysis done in the following publications, as well as several ongoing projects:
 
 Chadwick, G. L., Hemp, J., Fischer, W. W., & Orphan, V. J. (2018). Convergent evolution of unusual complex I homologs with increased proton pumping capacity: energetic and ecological implications. The ISME journal, 12(11), 2668.
 
