@@ -12,10 +12,10 @@ This analysis relies on a variety of data products from the GTDB. You can find t
 ## Step 1: Gene Calls and Annotations
 GTDB as of this work only supplies genomes as nucleotide fasta files, not genbank files with the associated gene calls and annotations. The first step of this pipeline is to iterate through all of the genomes and do this. Using the guidance of the prokka devs [here](https://github.com/tseemann/prokka/issues/187):
 
-`for F in *_genomic.fna; do 
-N=$(basename $F _genomic.fna) ; 
-prokka --locustag $N --outdir $N --prefix $N  $F ;
-done`
+    for F in *_genomic.fna; do 
+    N=$(basename $F _genomic.fna) ; 
+    prokka --locustag $N --outdir $N --prefix $N  $F ;
+    done
 
 This iterates through all of the genomes in a given directory, assuming that GTDB is still using the "_genomic.fna" suffix on their genome files. This process might take an excessive ammount of time depending on your machine. You could try using the --noanno flag, to just have prokka do gene calls and not annotations which is a longer process. The HMM searches in the subsequent steps does not rely on the prokka annotations. This will make a directory for each individual genome with the prokka outputs.
 ## Step 2: Find all genes matching a certain Hidden Markov Model
